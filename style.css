@@ -137,18 +137,43 @@ section.articles{
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
 #jr{
+=======
+/* Without Utilities */
+
+#jr{
+    padding: 30px 20px;
+}
+
+#jr > article{
+>>>>>>> 9d6ab14539d94e4e7a8070322a0ce326050401bd
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+<<<<<<< HEAD
+=======
+
+}
+
+#jr > article > header{
+    font-size: 15px;
+    color: gray;
+    background-color: white;
+}
+
+#jr > article > header > h1{
+  text-align: center;  
+>>>>>>> 9d6ab14539d94e4e7a8070322a0ce326050401bd
 }
 
 #jr > article > footer{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -162,20 +187,47 @@ section.articles{
 }
 
 #jr > article> footer > div{
+=======
+    margin: auto;
+}
+
+#jr > article > footer > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#jr > article > footer > div{
+>>>>>>> 9d6ab14539d94e4e7a8070322a0ce326050401bd
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
+<<<<<<< HEAD
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #jr > article > footer > div :nth-child(1){
+=======
+
+}
+
+#jr > article > footer > div :nth-child(1){
+    display: block;
+>>>>>>> 9d6ab14539d94e4e7a8070322a0ce326050401bd
     font-weight: bold;
 }
 
 #jr > article > footer > div :nth-child(2){
+<<<<<<< HEAD
     font-style: italic;
 }
+=======
+    display: inline;
+    font-style: italic;
+}
+
+>>>>>>> 9d6ab14539d94e4e7a8070322a0ce326050401bd
