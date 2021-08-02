@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     text-align: justify;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 html,body{
@@ -19,8 +20,29 @@ header{
   background-color: #000000;  
 }
 
-/*utilities*/
+.text-box{
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
 
+.text-box h1{
+    font-size: 88px;
+    color: #528394;
+}
+.text-box  p{
+    font-size: ;
+    margin: 10px 0px 40px;
+}
+
+/*utilities*/
+.black{
+    background-color: #000000;   
+}
 .text-center{
     text-align: center;
 }
@@ -54,12 +76,22 @@ section.articles{
     justify-content: flex-end;
 }
 
+.jc-space{
+    justify-content: space-around;
+
+}
+
 .jc-start{
     justify-content: flex-start;
 }
 
 .pa-20{
     padding: 20px;
+}
+
+.sidepa-20{
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .pa-40{
@@ -70,19 +102,41 @@ section.articles{
     padding: 60px;
 }
 
+.mar-20{
+    margin: 20px;
+}
+
+.mar-40{
+    margin: 40px;
+}
+
+.mar-60{
+    margin: 60px;
+}
+
+.sidemar-300{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.sidemar-30{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .circle{
     border-radius: 50px;
 }
 
 
-#links{
-    justify-content: space-between;
-}
-#links a {
+
+.Link{
     color: #ffffff;
     background-color: black;
-    border-color: white;
+    margin: 10px;
 }
+
+
 #logo {
     width: 35px;
     height: 35px;
@@ -137,7 +191,45 @@ section.articles{
     margin-right: 10px;
 }
 
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;  
+}
 
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #528394;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
 /* Without Utilities */
 
 #jr{
@@ -209,6 +301,15 @@ section.articles{
     font-style: italic;
 }
 
-display: inline;
-font-style: italic;
+figure {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+}
+
+figure blockquote {
+    margin-right: 0px;
 }
