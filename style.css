@@ -128,20 +128,37 @@ section.articles{
     border-radius: 50px;
 }
 
-
-
 .Link{
-    color: #ffffff;
-    background-color: black;
+    border: 1px solid #528394;
+    background: #000;
+    color: #528394 ;
+    border-radius: 10px ;
+    position: relative;
     margin: 10px;
+    text-decoration: none;
 }
 
+.checkbox{
+    display: flex;
+}
+
+form label{
+    text-align: right;
+    color: #528394;
+}
+
+.Link:hover{
+    cursor: pointer;
+    background: #7fffd4;
+    color: #000;
+}
 
 #logo {
     width: 35px;
     height: 35px;
     padding: 0;
     margin: 0;
+    margin-left: 20px;
     position: relative;
 }
 
@@ -150,6 +167,7 @@ section.articles{
     color: gray;
     background-color: white;
 }
+
 .article-content{
     font-size: 10px;
     color: black;
@@ -157,9 +175,8 @@ section.articles{
 
 .loginbox{
     width: 420px;
-    height: 620px;
     background: #14222d;
-    border-radius: 75px;
+    border-radius: 20px;
     top: 59%;
     left: 50%;
     position: absolute;
@@ -168,6 +185,7 @@ section.articles{
     padding: 70px 30px;
     color: #ffffff;
 }
+
 .loginbox h1{
     margin: 0;
     padding: 0px 0px 20px;
@@ -175,37 +193,32 @@ section.articles{
     font-size: 30px;
     color: #528394;
 }
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    font-size: 20px;
-    color: #528394
-}
 
 .loginbox input{
-    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .loginbox input[type="text"], input[type="password"]{
-    border: none;
-    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    border: 1px solid #528394;
     outline: #528394;
     height: 40px;
     color: #14222d ;
     font-size: 16px;
 }
 
-.loginbox input[type="submit"]{  
-    border: none;
+.loginbox input[type="submit"]{
+    width: 100%; 
+    border: 1px solid #528394;  
     outline: #528394;
     height: 40px;
     background: #ffffff;
     text-align: center;
     color: #528394;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .loginbox input[type="submit"]:hover{
@@ -223,7 +236,7 @@ section.articles{
 }
 
 .loginbox a:hover{
-    color: #7fffd4;
+    /*color: #7fffd4;*/
 }
 
 .image-specific{
@@ -265,7 +278,6 @@ section.articles{
 
 nav{
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;  
@@ -273,6 +285,10 @@ nav{
 
 .nav-links{
     flex: 1;
+    text-align: right;
+}
+
+.nav-links ul{
     text-align: right;
 }
 
@@ -304,75 +320,6 @@ nav{
 }
 /* Without Utilities */
 
-#jr{
-    padding: 30px 20px;
-}
-
-#jr > article{
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-#jr > article > header{
-    font-size: 15px;
-    color: gray;
-    background-color: white;
-}
-
-#jr > article > header > h1{
-  text-align: center;  
-}
-
-#jr > article > footer{
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#jr > article> footer > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#jr > article> footer > div{
-    margin: auto;
-}
-
-#jr > article > footer > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-}
-
-#jr > article > footer > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-#jr > article > footer > div :nth-child(1){
-    display: block;
-    font-weight: bold;
-}
-
-#jr > article > footer > div :nth-child(2){
-    font-style: italic;
-}
-
 figure {
     display: flex;
     margin: 0px;
@@ -384,4 +331,8 @@ figure {
 
 figure blockquote {
     margin-right: 0px;
+}
+
+.shadow{
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12),0px 1px 3px 0px rgba(0,0,0,0.2);
 }

@@ -12,28 +12,40 @@
 
 <body>
 	<section>
-		<nav class="nav black" >
+		<nav class="nav" >
+			<a href="index.html"><img src="assets/EchoLogo.png" id="logo"></a>
 			<div class="nav-links">
 				<ul>
-					<li><a href="index.html">Home page</a></li>
-					<li><a href="">About page</a></li>
-					<li><a href="">Blog page</a></li>
-					<li><a href="">Contact page</a></li>
+					<li>
+						<a href="index.html">Home page</a>
+					</li>
+					<li>
+						<a href="">About page</a>
+					</li>
+					<li>
+						<a href="">Blog page</a>
+					</li>
+					<li>
+						<a href="">Contact page</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 	</section>
-	<div class="loginbox">
-		<img src="assets/EchoLogo.png"  class="image-specific">
+	<div class="loginbox shadow">		
 		<h1>Oh you're back?</h1>
 		<form>
-			<p>Username</p>
-			<input type="text" name="" placeholder="What's your Username?">
-			<p>Password</p>
-			<input type="password" name="" placeholder="you can tell me :)">
+			<input type="text" name="username" id="username" placeholder="What's your Username?">
+			<input type="password" name="password" id="password" placeholder="Please enter your Password">
+			
+			<div class="checkbox">
+				<input type="checkbox" name="terms">
+				<label for="terms">I've agreed to your very illegal terms and conditions.</label>
+			</div>
+			
 			<input type="submit" name="" value="Login">
-			<a href="">I Forgot My Password</a>
-			<a href="">I don't have an account</a>
+			<a href="" class="Link">I Forgot My Password</a>
+			<a href="" class="Link">I don't have an account</a>
 		</form>
 	</div>
 </body>
