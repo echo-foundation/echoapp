@@ -34,6 +34,12 @@ header{
     font-size: 88px;
     color: #528394;
 }
+
+.text-box h2{
+    font-size: 60px;
+    color: #ffffff;
+}
+
 .text-box  p{
     font-size: ;
     margin: 10px 0px 40px;
@@ -232,7 +238,7 @@ form label{
     text-decoration: none;
     font-size: 15px;
     line-height: 20px;
-    color: #ffffff;
+    color: #ffffff
 }
 
 .loginbox a:hover{
@@ -320,6 +326,10 @@ nav{
 }
 /* Without Utilities */
 
+.flex-row{
+    flex-direction: row;
+}
+
 figure {
     display: flex;
     margin: 0px;
@@ -335,4 +345,42 @@ figure blockquote {
 
 .shadow{
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12),0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+#signin{
+    color: blue;
+    text-decoration: underline;
+}
+
+::placeholder {
+  font-style: italic    ;
+}
+
+#FL{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#fname{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#lname{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.custom-select{
+    position: relative;
+    background-color: #528394;
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
 }
