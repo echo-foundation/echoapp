@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<title>EchoChat</title>
+
+<body>
+	<section class="header d-flex flex-column">
+		<nav class="nav">
+			<a href="index.html"><img src="assets/EchoLogo.png" id="logo"></a>
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html">Home page</a></li>
+					<li><a href="">About page</a></li>
+					<li><a href="">Blog page</a></li>
+				</ul>
+
+
+			</div>
+		</nav>
+		<div class="container">
+			<div class="chat">
+				<div class="chat-header">
+					<div class="profile">
+						<div class="profile-left">
+							<a href="index.html"><img src="assets/arrow.png" class="arrow"></a>
+							<img src="assets/pp.png" class="pp">
+							<h2>Arachnid8</h2>
+							<span>online</span>
+						</div>
+						<div class="profile-right">
+							<img src="assets/video.png" class="icon">
+							<img src="assets/phone.png" class="icon">
+							<img src="assets/more.png" class="icon">
+						</div>
+					</div>
+				</div>
+				<div class="chat-box" id="chatContainer">
+					<!-- <div class="chat-r">	
+						<div class="sp"></div>
+						<div class="mess mess-r">
+							<p id="mbody">
+								<img src="assets/dots.png" width= 10px>
+							</p>
+							<div class="check">
+								<span>4:00 pm</span>
+								<img src="assets/check-2.png">
+							</div>
+						</div>				
+					</div> -->
+				</div>
+				<div class="chat-footer">
+					<img src="assets/emo.png" class="emo">
+					<div contenteditable="true" id="testdiv"></div>
+					<div class="icons">
+						<img src="assets/attach file.png">
+						<img src="assets/camera.png">
+					</div>
+					<button onclick="addMessage()" id="sendButton"><img src="assets/send.png" class="send"></button>
+				</div>
+			</div>
+		</div>
+		<script src="functions.js"></script>
+	</body>
+	</html>
