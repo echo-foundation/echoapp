@@ -6,6 +6,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
 </head>
 
 <title>EchoChatTest</title>
@@ -32,7 +35,7 @@
 							<a href="index.html"><img src="assets/arrow.png" class="arrow"></a>
 							<img src="assets/pp.png" class="pp">
 							<h2>Arachnid8</h2>
-							<span>online</span>
+							<span id="lastSeen"></span>
 						</div>
 						<div class="profile-right">
 							<img src="assets/video.png" class="icon">
@@ -58,11 +61,12 @@
 				<div class="chat-footer">
 					<img src="assets/emo.png" class="emo">
 					<div contenteditable="true" id="testdiv"></div>
-					<div class="icons">
+					<button class="send" onclick="addMessage()" id="sendButton">
+						<i class="lni lni-telegram-original"></i>
+					</button>
+					<div class="attach">
 						<img src="assets/attach file.png">
-						<img src="assets/camera.png">
 					</div>
-					<button onclick="addMessage()" id="sendButton"><img src="assets/send.png" class="send"></button>
 				</div>
 			</div>
 		</div>
